@@ -48,7 +48,9 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
 
+        # Create a starting node, will be set to null
         list_node = ListNode()
+        # Need to encapsulate that node into a list. 
         new_list = list_node
         listone = list1
         listtwo = list2
@@ -66,5 +68,5 @@ class Solution(object):
             new_list.next = listone
         elif listtwo:
             new_list.next = listtwo
+        #Return the 2nd node we point to. 
         return list_node.next
-        
